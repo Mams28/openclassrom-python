@@ -3,7 +3,7 @@
 import argparse
 import analysis.csv as c_an
 import analysis.xml as x_an
-import pdb
+#import pdb
 
 def parseargs():
 	parser = argparse.ArgumentParser()
@@ -22,7 +22,7 @@ def parseargs():
 def main():
 	args = parseargs()
 	datafile = args.datafile
-	import pdb; pdb.set_trace()
+	#import pdb; pdb.set_trace()
 	if args.extension == "xml":
 		x_an.lauch_analysis(datafile)
 	elif args.extension == "csv":
